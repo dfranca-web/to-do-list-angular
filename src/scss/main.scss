@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+@import './reset.scss';
+@import './variables.scss';
+
+html {
+  height: 100vh;
+
+  body {
+    height: calc(100% - $height-header);
+    padding-top: $height-header;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background-color: $primary-background-color;
+  }
+}

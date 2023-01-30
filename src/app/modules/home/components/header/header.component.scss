@@ -1,0 +1,17 @@
+@import '../../../../../scss/variables.scss';
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 2rem);
+  height: $height-header;
+  padding: 0 1rem;
+  color: $tertiary-color;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: $tertiary-background-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
