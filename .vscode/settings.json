@@ -1,6 +1,6 @@
 {
-  "editor.fontSize": 16, // Editor font size
-  "terminal.integrated.fontSize": 16, // terminal Font size of the box
+  "editor.fontSize": 14, // Editor font size
+  "terminal.integrated.fontSize": 14, // terminal Font size of the box
   "editor.tabSize": 2, // Tab Size 2 A space
   "editor.formatOnSave": true, // Saving is formatting
   "prettier.singleQuote": true, // Single quotation marks
