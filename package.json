@@ -11,8 +11,17 @@
     "lint": "ng lint"
   },
   "lint-staged": {
-    "src/**/*.{ts,scss,html}": [
-      "npm run lint"
+    "*.{ts,json,md,scss,html}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.ts": [
+      "tslint --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint --fix",
+      "git add"
     ]
   },
   "dependencies": {
@@ -37,11 +46,11 @@
     "@angular-eslint/template-parser": "15.2.0",
     "@angular/cli": "~15.1.2",
     "@angular/compiler-cli": "^15.1.0",
-    "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.48.1",
     "@typescript-eslint/parser": "5.48.1",
+    "commitlint": "^17.4.2",
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -52,6 +61,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "lint-staged": "^13.1.0",
+    "npm-post-install": "^0.0.2",
     "prettier": "^2.8.3",
     "prettier-eslint": "^15.0.1",
     "typescript": "~4.9.4"
