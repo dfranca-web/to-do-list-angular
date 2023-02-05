@@ -10,6 +10,11 @@
     "test": "ng test",
     "lint": "ng lint"
   },
+  "lint-staged": {
+    "src/**/*.{ts,scss,html}": [
+      "npm run lint"
+    ]
+  },
   "dependencies": {
     "@angular/animations": "^15.1.0",
     "@angular/common": "^15.1.0",
